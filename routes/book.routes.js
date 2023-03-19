@@ -9,4 +9,10 @@ router.get('/', (req, res) => {
 		.catch((err) => console.log('Error retrieving Books from the Database', err));
 });
 
+router.get('/:bookId', (req, res) => {
+	Book.findById(req.params.bookId)
+		.then((book) => res.render('books/book', book))
+		.catch((err) => console.log(err));
+});
+
 module.exports = router;

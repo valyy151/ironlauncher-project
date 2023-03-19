@@ -1,10 +1,9 @@
 <div id='booksWrapperDiv'>
 	{{#each books}}
 		<div class='book'>
-			<b> {{title}}</b>
-			<p>Author: {{author}}</p>
-			<p>Rating: {{rating}}</p>
-			<p>Description: {{description}}</p>
+			<h3> {{title}}</h3>
+			<p> <b> Author: </b> {{author}} </p>
+			<a href='/books/{{_id}}'>View Details</a>
 		</div>
 	{{/each}}
 </div>
