@@ -1,0 +1,19 @@
+<div id='booksWrapperDiv'>
+	<h1>
+		<a href='/books/create'>Add a Book</a>
+	</h1>
+	{{#each books}}
+		<div class='book'>
+			<h3> {{title}}</h3>
+			<p> {{author}} </p>
+			<div>
+				<a href='/books/{{_id}}'>View Details</a>
+				<a href='/books/{{_id}}/edit'>Edit</a>
+				<form action='/books/{{_id}}/delete' method='post'>
+					<button>Delete</button>
+				</form>
+			</div>
+		</div>
+	{{/each}}
+
+</div>

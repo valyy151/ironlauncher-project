@@ -1,0 +1,19 @@
+<form action='/books/{{_id}}/edit' method='POST'>
+
+	<div class='create-book'>
+		<h2>{{title}}</h2>
+		<label for='title'>Title</label>
+		<input type='text' name='title' value='{{title}}' />
+
+		<label for='author'>Author</label>
+		<input type='text' name='author' value='{{author}}' />
+
+		<label for='rating'>Rating</label>
+		<input type='number' name='rating' value='{{rating}}' />
+
+		<label for='description'>Description</label>
+		<textarea name='description' cols='100' rows='10'>{{description}}</textarea>
+
+		<button>Update</button>
+	</div>
+</form>

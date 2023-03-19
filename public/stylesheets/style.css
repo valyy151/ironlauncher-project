@@ -18,3 +18,14 @@ a {
 	resize: none;
 	font-size: 1.2em;
 }
+
+.book div {
+	display: flex;
+}
+
+.book button {
+	background: none;
+	border: none;
+	color: #00b7ff;
+	cursor: pointer;
+}
