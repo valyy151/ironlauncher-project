@@ -1,6 +1,4 @@
-<div class='anchor'>
-	<a href='/books/create' class='anchor'>Add a Book</a>
-</div>
+{{>nav}}
 <div id='booksWrapperDiv'>
 
 	{{#each books}}
@@ -10,7 +8,7 @@
 			<div>
 				<a href='/books/{{_id}}'>Details</a>
 				<a href='/books/{{_id}}/edit' class='orange'>Edit</a>
-				<form action='/books/{{_id}}/delete' method='post'>
+				<form action='/books/{{_id}}/delete' method='POST'>
 					<button class='red'>Delete</button>
 				</form>
 
