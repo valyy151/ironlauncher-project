@@ -1,19 +1,25 @@
+<div class='anchor'>
+	<a href='/books/create' class='anchor'>Add a Book</a>
+</div>
 <div id='booksWrapperDiv'>
-	<h1>
-		<a href='/books/create'>Add a Book</a>
-	</h1>
+
 	{{#each books}}
 		<div class='book'>
 			<h3> {{title}}</h3>
 			<p> {{author}} </p>
 			<div>
-				<a href='/books/{{_id}}'>View Details</a>
-				<a href='/books/{{_id}}/edit'>Edit</a>
+				<a href='/books/{{_id}}'>Details</a>
+				<a href='/books/{{_id}}/edit' class='orange'>Edit</a>
 				<form action='/books/{{_id}}/delete' method='post'>
-					<button>Delete</button>
+					<button class='red'>Delete</button>
 				</form>
+
 			</div>
 		</div>
 	{{/each}}
 
+</div>
+
+<div class='anchor'>
+	<a href='/' class='anchor'>Go Back</a>
 </div>
