@@ -1,4 +1,4 @@
-<div class='edit-book'>
+<div class='wrapper'>
 	<form action='/books/{{_id}}/edit' method='POST'>
 
 		<div class='create-book'>
@@ -15,9 +15,9 @@
 			<label for='description'>Description</label>
 			<textarea name='description' cols='100' rows='10'>{{description}}</textarea>
 
-			<button>Update</button>
+			<button class='button orange'>Update</button>
 
-			<h2><a href='/books'>Go Back</a></h2>
+			<a href='javascript: history.back()' class='big-anchor'>Go Back</a>
 		</div>
 	</form>
 

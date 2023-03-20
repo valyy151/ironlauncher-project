@@ -3,6 +3,7 @@ const Book = require('../models/Book.model');
 
 router.get('/', (req, res) => {
 	Book.find()
+		.sort({ rating: -1 })
 		.then((books) => {
 			res.render('books/list', { books });
 		})

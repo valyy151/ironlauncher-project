@@ -3,6 +3,7 @@ body {
 	background: #ff7e5f;
 	background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
 	background: linear-gradient(to right, #feb47b, #ff7e5f);
+	cursor: default;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -53,16 +54,6 @@ a {
 	border-radius: 2rem;
 }
 
-.book div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.book div * {
-	margin: 0.5vh auto;
-}
-
 .book button {
 	background: none;
 	border: none;
@@ -70,6 +61,27 @@ a {
 	padding: 0;
 	margin: 0;
 	font-size: 2rem;
+}
+
+.book div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.book div * {
+	margin: 0.5rem auto;
+}
+
+.book h3 {
+	margin-bottom: 0.5rem;
+	font-weight: 400;
+}
+.book h4 {
+	margin: auto;
+	font-style: italic;
+	color: rgb(90, 90, 90);
+	font-weight: 400;
 }
 
 .book form {
@@ -103,32 +115,60 @@ a {
 	color: rgb(255, 184, 53);
 }
 
-.book-details {
+.edit-book {
+	box-shadow: 0px 0px 5px;
+	height: 65vh;
+	width: 60vw;
+}
+
+.wrapper {
 	background: white;
 	border-radius: 2rem;
-	width: 50vw;
-	margin: auto;
+	width: 55vw;
+	margin: 15vh auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 0px 0px 5px;
 }
 
-.book-details p {
-	display: flex;
+.wrapper button {
+	margin: 1.5vh auto;
+}
 
+.wrapper p {
+	display: flex;
+	font-size: 1.1rem;
 	text-align: justify;
 }
 
-.edit-book {
-	background: white;
-	border-radius: 2rem;
-	box-shadow: 0px 0px 5px;
-	height: 65vh;
-	width: 60vw;
-	margin: auto;
+.wrapper h2 {
+	font-size: 2rem;
 }
 
-.edit-book button {
-	margin: 1.5vh auto;
+.wrapper b {
+	font-size: 1.2rem;
+}
+
+.button {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	padding: 0.2rem 1.5rem;
+}
+
+.big-anchor {
+	font-size: 1.5rem;
+	padding: 0.2rem 1.5rem;
+	border-radius: 2rem;
+	border: 2px solid #00b7ff;
+}
+.big {
+	font-size: 1.5rem;
+	margin: 0.5rem auto;
+}
+
+.green {
+	color: rgb(136, 212, 23);
 }
