@@ -1,6 +1,15 @@
 body {
-	padding: 50px;
 	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+	background: #ff7e5f;
+	background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
+	background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 a {
@@ -14,12 +23,25 @@ a {
 	align-items: center;
 }
 
+.create-book input {
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.create-book label {
+	font-size: 1.3rem;
+}
+
 .create-book textarea {
 	resize: none;
-	font-size: 1.2em;
+	font-size: 1.3em;
+	padding: 1rem 2rem;
+	text-align: justify;
+	border-radius: 1rem;
 }
 
 .book {
+	background: white;
 	margin: 3vh auto;
 	width: 30vw;
 	height: 40vh;
@@ -60,9 +82,17 @@ a {
 }
 
 .anchor {
+	margin: 1rem;
 	display: flex;
 	justify-content: center;
-	font-size: 1.6em;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.anchor a {
+	background: white;
+	padding: 0.5rem 2rem;
+	border-radius: 2rem;
 }
 
 .red {
@@ -71,4 +101,34 @@ a {
 
 .orange {
 	color: rgb(255, 184, 53);
+}
+
+.book-details {
+	background: white;
+	border-radius: 2rem;
+	width: 50vw;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px 5px;
+}
+
+.book-details p {
+	display: flex;
+
+	text-align: justify;
+}
+
+.edit-book {
+	background: white;
+	border-radius: 2rem;
+	box-shadow: 0px 0px 5px;
+	height: 65vh;
+	width: 60vw;
+	margin: auto;
+}
+
+.edit-book button {
+	margin: 1.5vh auto;
 }

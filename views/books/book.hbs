@@ -1,8 +1,12 @@
-<h2>{{title}}</h2>
+<div class='book-details'>
+	<h2>{{title}}</h2>
+	<b>Author: </b>
+	<p>{{author}}</p>
+	<b>Rating: </b>
+	<p>{{rating}}/10</p>
+	<b>Description: </b>
+	<p style='width:35vw'> {{description}}</p>
 
-<p><b>Author: </b>{{author}}</p>
-<p><b>Rating: </b>{{rating}}/10</p>
-<p><b>Description: </b> <br /> {{description}}</p>
-
-<h2><a href='/books/{{_id}}/edit'>Edit</a></h2>
-<h2><a href='/books'>Back</a></h2>
+	<h2><a href='/books/{{_id}}/edit' class='orange'>Edit</a></h2>
+	<h2><a href='/books'>Go Back</a></h2>
+</div>
