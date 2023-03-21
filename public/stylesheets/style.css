@@ -1,8 +1,7 @@
 body {
 	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-	background: #ff7e5f;
-	background: -webkit-linear-gradient(to right, #db9c6c, #b15741);
-	background: linear-gradient(to right, #db9c6c, #af5640);
+	background-color: #ff9a8b;
+	background-image: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
 	cursor: default;
 	margin: 0;
 }
@@ -10,16 +9,12 @@ body {
 nav {
 	display: flex;
 	background-color: rgb(255, 255, 255);
-	justify-content: space-between;
+	justify-content: center;
 	height: 3.5rem;
-	box-shadow: 0px 0px 5px;
+	box-shadow: 0px 0px 10px;
 }
 
-nav div {
-	margin: auto 3rem;
-}
-
-nav div a {
+nav a {
 	margin: auto 2rem;
 	font-size: 2rem;
 }
@@ -77,8 +72,11 @@ a {
 	}
 
 	.create-book input {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		text-align: center;
+		padding: 0.2rem;
+		border-radius: 0.5rem;
+		border: 1px solid black;
 	}
 
 	.create-book label {

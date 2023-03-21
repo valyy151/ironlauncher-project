@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 // TODO: Please make sure you edit the User model to whatever makes sense in this case
+
 const bookSchema = new Schema(
 	{
 		title: {
@@ -9,8 +10,8 @@ const bookSchema = new Schema(
 		},
 		author: {
 			type: String,
-			required: true,
 		},
+
 		rating: {
 			type: Number,
 			required: true,
@@ -25,6 +26,6 @@ const bookSchema = new Schema(
 	},
 );
 
-const User = model('Book', bookSchema);
+const Book = model('Book', bookSchema);
 
-module.exports = User;
+module.exports = Book;
